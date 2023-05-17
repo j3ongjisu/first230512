@@ -1,0 +1,101 @@
+* {
+    outline: 1px solid tomato--;
+}
+
+.inner {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    background: #333;
+    color: #fff;
+}
+
+/* 박스 가운데 배열 */
+.topBanner {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.topBanner.on {
+    height: 0;
+    overflow: hidden;
+}
+
+.topBanner .inner {
+    position: relative;
+}
+
+.topBanner .inner i {
+    position: absolute;
+    top: -10px;
+    right: 0;
+
+    font-size: 20px;
+}
+
+.topBanner .tit {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.topBanner p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.topBanner .btn {
+    padding: 3px 20px 5px 20px;
+    margin: 0 0 0 15px;
+
+}
+
+.mainVisual .itm {
+    height: 600px;
+}
+
+.mainVisual .itm01 {
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm02 {
+    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm03 {
+    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainVisual .slick-dots li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: tomato;
+    margin: 0 2px;
+}
+
+.mainVisual .slick-dots li::after {
+    content: "01";
+}
+
+.mainVisual .slick-dots li.slick-active {
+    background: #333;
+}
+
+.mainVisual .slick-dots li button {
+    display: none;
+}
